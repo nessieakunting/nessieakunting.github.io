@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Nessie Akunting</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contentstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="sidebarMenu">
+        <!-- Sidebar -->
+        <div id="sidebar" class="d-inline-block float-left">
+          <nav>
+            <div class="sidebar-header">
+              <img
+                src="/image/nessielogo.png"
+                style="width: 130px"
+                class="mx-auto d-block mt-2"
+              />
+            </div>
+
+            <ul class="list-unstyled components">
+              <div>
+                <h3 style="font-weight: 700" class="text-center">Document</h3>
+              </div>
+
+              <li>
+                <a href="#quickguideMenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle"
+                >Quick Guide</a>
+              </li>
+
+              <ul class="collapse list-unstyled" id="quickguideMenu">
+                <li>
+                  <a href="#demofile">Using Demo File</a>
+                </li>
+                <li>
+                  <a href="#newfile">Create New File</a>
+                </li>
+                <li>
+                  <a href="#initialsetup">Initial Setup</a>
+                </li>
+                <li>
+                  <a href="#activation">Database Activation</a>
+                </li>
+              </ul>
+
+              <li>
+                <a
+                  href="#installMenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Installation and Updates</a
+                >
+                <ul class="collapse list-unstyled" id="installMenu">
+                  <li>
+                    <a href="#">Installation</a>
+                  </li>
+                  <li>
+                    <a href="#">Update</a>
+                  </li>
+                  <li>
+                    <a href="#">Own the application</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#pengaturanMenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Initial Setup</a
+                >
+                <ul class="collapse list-unstyled" id="pengaturanMenu">
+                  <li>
+                    <a
+                      href="#menuBukubesar"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >G/L Account Setup</a
+                    >
+                    <ul class="collapse list-unstyled" id="menuBukubesar">
+                      <li>
+                        <a href="#">Chart of Account</a>
+                      </li>
+                      <li>
+                        <a href="#">Trial Balance</a>
+                      </li>
+                      <li>
+                        <a href="#">Automatic Accounts</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#menuPersediaan"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Inventory Setup</a
+                    >
+                    <ul class="collapse list-unstyled" id="menuPersediaan">
+                      <li>
+                        <a href="#">Location / Warehouse</a>
+                      </li>
+                      <li>
+                        <a href="#">Items and Services List</a>
+                      </li>
+                      <li>
+                        <a href="#">Inventory</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#menuKontak"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Contact Setup</a
+                    >
+                    <ul class="collapse list-unstyled" id="menuKontak">
+                      <li>
+                        <a href="#">Contact List</a>
+                      </li>
+                      <li>
+                        <a href="#">Vendors</a>
+                      </li>
+                      <li>
+                        <a href="#">Customers</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">Database Activation</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#menuTransaksi"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Register Transactions</a
+                >
+                <ul class="collapse list-unstyled" id="menuTransaksi">
+                  <li>
+                    <a href="#">Balances Transfer</a>
+                  </li>
+                  <li>
+                    <a href="#">General Expense</a>
+                  </li>
+                  <li>
+                    <a href="#">Other Income</a>
+                  </li>
+                  <li>
+                    <a href="#">Account Payable</a>
+                  </li>
+                  <li>
+                    <a href="#">Account Receivable</a>
+                  </li>
+                  <li>
+                    <a href="#">Other Receivables and Payables</a>
+                  </li>
+                  <li>
+                    <a href="#">Fixed Asset</a>
+                  </li>
+                  <li>
+                    <a href="#">Prepaid Expense</a>
+                  </li>
+                  <li>
+                    <a href="#">Purchase Advance</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Deposit</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#menuPenjualan"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Sales</a
+                >
+                <ul class="collapse list-unstyled" id="menuPenjualan">
+                  <li>
+                    <a href="#">Register New Sales</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Return</a>
+                  </li>
+                  <li>
+                    <a href="#">Sales Data</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#menuPembelian"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Purchase</a
+                >
+                <ul class="collapse list-unstyled" id="menuPembelian">
+                  <li>
+                    <a href="#">Register New Purchase</a>
+                  </li>
+                  <li>
+                    <a href="#">Purchase Return</a>
+                  </li>
+                  <li>
+                    <a href="#">Purchase Data</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#menuInventory"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Inventory Management</a
+                >
+                <ul class="collapse list-unstyled" id="menuInventory">
+                  <li>
+                    <a href="#">Location / Warehouse</a>
+                  </li>
+                  <li>
+                    <a href="#">Items and Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Inventory</a>
+                  </li>
+                  <li>
+                    <a href="#">Inventory Adjustment</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#manajemenKontak"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Contact Management</a
+                >
+                <ul class="collapse list-unstyled" id="manajemenKontak">
+                  <li>
+                    <a href="#">Contacts</a>
+                  </li>
+                  <li>
+                    <a href="#">Vendors</a>
+                  </li>
+                  <li>
+                    <a href="#">Customers</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#menuLaporan"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Reports</a
+                >
+                <ul class="collapse list-unstyled" id="menuLaporan">
+                  <li>
+                    <a
+                      href="#menuLaporanKeuangan"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Finance Reports</a
+                    >
+                    <ul class="collapse list-unstyled" id="menuLaporanKeuangan">
+                      <li>
+                        <a href="#">Trial Balance Full Version</a>
+                      </li>
+                      <li>
+                        <a href="#">Balance Sheet</a>
+                      </li>
+                      <li>
+                        <a href="#">Income Statement</a>
+                      </li>
+                      <li>
+                        <a href="#">Cash Flow</a>
+                      </li>
+                      <li>
+                        <a href="#">Account Statement</a>
+                      </li>
+                      <li>
+                        <a href="#">General Journal</a>
+                      </li>
+                      <li>
+                        <a href="#">Vendor Payable List</a>
+                      </li>
+                      <li>
+                        <a href="#">Customer Receivable List</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#menuLaporanPenjualan"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Sales Reports</a
+                    >
+                    <ul
+                      class="collapse list-unstyled"
+                      id="menuLaporanPenjualan"
+                    >
+                      <li>
+                        <a href="#">Sales Summary in Charts</a>
+                      </li>
+                      <li>
+                        <a href="#">Monthly Sales</a>
+                      </li>
+                      <li>
+                        <a href="#">Sales by Invoices</a>
+                      </li>
+                      <li>
+                        <a href="#">Sales by Items and Services</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#menuLaporanPembelian"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Purchase Reports</a
+                    >
+                    <ul
+                      class="collapse list-unstyled"
+                      id="menuLaporanPembelian"
+                    >
+                      <li>
+                        <a href="#">Monthly Purchase</a>
+                      </li>
+                      <li>
+                        <a href="#">Purchase by Invoice</a>
+                      </li>
+                      <li>
+                        <a href="#">Purchase by Items</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#menuLaporanPersediaan"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >Inventory Reports</a
+                    >
+                    <ul
+                      class="collapse list-unstyled"
+                      id="menuLaporanPersediaan"
+                    >
+                      <li>
+                        <a href="#">Inventory Summary</a>
+                      </li>
+                      <li>
+                        <a href="#">Inventory Report</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  href="#manajemenLainnya"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Other Setup</a
+                >
+                <ul class="collapse list-unstyled" id="manajemenLainnya">
+                  <li>
+                    <a
+                      href="#menuPengguna"
+                      data-toggle="collapse"
+                      aria-expanded="false"
+                      class="dropdown-toggle"
+                      >User Management</a
+                    >
+                    <ul class="collapse list-unstyled" id="menuPengguna">
+                      <li>
+                        <a href="#">User List</a>
+                      </li>
+                      <li>
+                        <a href="#">Edit User Data</a>
+                      </li>
+                      <li>
+                        <a href="#">Change Password</a>
+                      </li>
+                      <li>
+                        <a href="#">Deactivate a User</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Data File Management</a>
+                  </li>
+                  <li>
+                    <a href="#">Company Data</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">End-Period Procedure </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="d-inline-block mt-2">
+          <button
+            type="button"
+            id="sidebarCollapse"
+            style="border-radius: 0 10px 10px 0"
+            class="btn btn-info ms-0 pt-2 pb-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-left-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Page Content -->
+      <div id="content">
+        <div class="container-fluid">
+          <div>
+            <span class="warning" style="font-weight: 600; padding:3px 8px; border:gray solid 1px; border-radius: 15px;"> Status : Incomplete</span>
+          </div>
+        </br>
+          <h1 id="quickguide">Quick Guide</h1>
+          <p>Use this quick guide to jump start on using Nessie Akunting.</p>
+          <section class="m-4">
+            <h4 id="demofile">Using Demo File</h4>
+            <div class="clearfix row">
+              <p class="fig-desc col">You can use the demo data file to evaluate Nessie Akunting. Download the file  
+                <a href="https://www.nessieakunting.com/demo data/tokonessie.bak" class="link" download>here</a>.
+              <br>Copy the data file (tokonessie.bak) to an external storage such as usb flash disk, then launch Nessie Akunting. 
+            </p>
+            </div>
+            <div class="clearfix nsContainer">
+              <img
+                class="fig mb-3"
+                src="/screenShot/fig-0-0.png"
+              />
+              <p class="fig-desc">
+                On the first displayed page, click on
+                <span class="tombol merah">Impor Dari Media Eksternal</span> button and then choose tokonessie.bak from 
+                your external storage, then click <span class="tombol abuabu">Impor</span> button.
+              </p>
+            </div>
+            <div class="clearfix nsContainer">
+              <img
+                class="fig mb-3"
+                src="/screenShot/fig-0-1.png"
+              />
+              <p class="fig-desc">
+                Now on the <span class="tebal">File Data</span> panel, you will find the imported file name listed on this panel, choose it and then 
+                click <span class="tombol abuabu">Buka File</span> button.
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-0-2.png"
+              />
+              <p class="fig-desc">
+                On Login dialog fill in 
+                <br>Nama Pengguna / User Name : <span class="tebal">admin</span>
+                <br>Kata Sandi / Password : <span class="tebal">admin</span>
+                <br>click on <span class="tombol abuabu">Login</span>
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-0-3.png"
+              />
+              <p class="fig-desc">
+                Once logged in, you can access all functionality of the application. On the top you will find menu bar 
+                where you can access most functions, and on the bottom left you will see the <span class="tebal">User Name</span> 
+                currently logged in, you can click on this name to access <span class="tombol abuabu">Logout</span> and 
+                <span class="tombol abuabu">Exit</span> function.
+                
+
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <p class="fig-desc">
+                Refer to this documentation for complete guide to use this application, you can access this document from within the application 
+                from menu bar <span class="tombol abuabu">Bantuan</span>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+              <span class="tombol abuabu">Dokumentasi</span>
+                . Navigate through the available 
+                subjects from the navigation side bar. If the navigation bar is not showed, you can click on the 
+                <span class="tombol btn-info" style="padding-top:3px;"><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-left-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                />
+              </svg></span> button located on the top-left side to open the navigation pane.
+              </p>
+            </div>
+          </section>
+
+          <section class="m-4">
+
+            <div class="clearfix nsContainer">
+              <p class="fig-desc">
+                If you want to create a new file instead using the then you can follow the instruction below to create a new data file and initate it for first use.
+              </p>
+            </div>
+
+
+            <h4 id="newfile">Create New File</h4>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-0.png"
+              />
+              <p class="fig-desc">
+                On the first displayed page, click on
+                <span class="tombol merah">Buat File Baru</span> button to
+                create a new data file.
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1.png"
+              />
+              <p class="fig-desc">
+                On
+                <span class="tebal"
+                  >Data Entitas Usaha / Organisasi (Entity / Organization
+                  Data)</span
+                >
+                page, fill in with information of your company or organization,
+                those with red placeholder text are mandatory. Choose the
+                country from the drowdown list, by default the currency field
+                will be selected for the national currency of your selected
+                country. You can change it by selecting differently from the
+                currency dropdown list.
+
+                <span class="warning"
+                  >Attention: Country and Currency is non changeable after you
+                  completed this step.</span
+                >
+                <br /><br />Continue to next page by clicking on
+                <span class="tombol abuabu" style="padding-top: 5px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </span>
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-2.png"
+              />
+              <p class="fig-desc">
+                On <span class="tebal">Periode Buku (Book Period)</span> page,
+                fill in with your accounting book period, this is the date when
+                you start recording your transaction for the fiscal year, and
+                complete it with the corresponding end date. The common used
+                fiscal period are January 1st and December 31st respectively.
+
+                <br /><br />Continue by click on
+                <span class="tombol abuabu" style="padding-top: 5px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </span>
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-3.png"
+              />
+              <p class="fig-desc">
+                On <span class="tebal">Pengguna Master (Master User)</span> fill
+                the data of the person that will have the role as master user to
+                this data file. A master user has the highest access
+                authorization to this data file and cannot be overridden by
+                other.
+
+                <span class="warning"
+                  >Warning : password is changeable within the application but
+                  is non recoverable when lost or forgotten, make sure to
+                  remember or safe it well.</span
+                >
+                <br /><br />Continue by click on
+                <span class="tombol abuabu" style="padding-top: 5px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </span>
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img class="fig fig-2 mb-3" src="/screenShot/fig-4.png" />
+              <p class="fig-desc">
+                On <span class="tebal">File Data</span> page fill in the field
+                with the name for the datafile without any file extension, the
+                name should be alphanumeric without any white space and minimum
+                3 characters long. <br /><br />Click on
+                <span class="tombol abuabu" style="margin-right: 3px">
+                  Simpan
+                </span>
+                button to save your data.
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <p class="fig-desc" >
+                At this point your data will be saved to the harddisk where
+                your application reside (that will be in your PC or Laptop in
+                most cases). It will be kept in a special folder maintained
+                specially for your application.
+                <span class="warning"
+                  >Be aware that this folder and all data in it will be removed
+                  when you uninstall the application. You can copy the data to
+                  an external disk from within the application</span
+                >. Refer to <a href="#" class="link">Other Setup - Data File Management</a>
+              </p>
+            </div>
+          </section>
+
+          <section class="m-4">
+            <h4 id="initialsetup">Initial Setup</h4>
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-1.png"
+              />
+              <p class="fig-desc">
+                The first displayed page after saving your new data file
+                will be the <span class="tebal">Initial Setup Dashboard</span>. On this step you can customize the Chart of Account 
+                to better suit you organization requirement, then you also need to set the automatic accounts before you 
+                can activate the database file.
+
+              <br><br>You can get to the <span class="tebal">Chart of Account</span> page by following this direction : 
+                <span class="tombol abuabu">Pengaturan Awal</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol abuabu"
+                  >Pengaturan Rekening Buku Besar</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol abuabu">Daftar Rekening</span>
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-2.png"
+              />
+              <p class="fig-desc">
+                On <span class="tebal">Daftar Rekening / Chart of Account</span> page you will find list of accounts that are used to 
+                record your transaction value. The application comes with a simple chart of account that you can use with minimal change 
+                to accomodate simple accounting need, you might want to change this to better suit your organization need. 
+                You can add <span class="tombol addColor" style="padding-top:3px;">+</span>, remove <span class="tombol cancelColor" 
+                style="padding-top:3px;">-</span> and edit <span class="tombol editColor" style="padding-top:3px;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                </svg></span> accounts in this chart. 
+<br>
+                <br />Chart of Accounts is structured as follow :
+                <br/><span class="tombol abuabu">Category</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                 <span class="tombol nsGroupColor">Group</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol nsSubgroupColor">Sub Group</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol nsAccountColor">Rekening</span><br>
+                Where each Rekening (account) must be a member of a Sub Group, and Sub Group of a Group. You can alter your 
+                chart of account any way you like as long as it follows this hierarchy. 
+                <br><br>There also some type of account that must present in your chart of account for the app to function, 
+                they are the accounts that are set as automatic accounts. You can learn more about Chart of Account in <a href="#" 
+                class="link">Initial Setting Chart of Account</a>
+
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-3.png"
+              />
+              <p class="fig-desc">
+                On <span class="tebal">Automatic Account Page</span>, by default the fields will be populated with 
+                account that set as automatic and you can leave it as is. But in some cases when you change the 
+                chart of account structure, you might find these fields left empty and you need to manually set it by choosing 
+                from the dropdown control. If the dropdown is empty, then you need to create an account entry in the Chart of Account that 
+                is of the required account type (you can check on the question mark to find which type is required by each automatic account).
+                Save the new setting by clicking on <span class="tombol addColor">Simpan</span> button.
+                <br /><br><span
+                  class="warning"
+                  >Automatic Account only set once and can not be changed once the database is activated.
+                </span>
+              
+              </p>
+            </div>
+          </section>
+
+          <section class="m-4">
+            <h4 id="activation">Database Activation</h4>
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-4.png"
+              />
+              <p class="fig-desc">
+                Before activating the database, make sure that the value on credit and debit sides are the same, 
+                you can check this by opening the <span class="tebal"> Neraca Percobaan / Trial Balance</span> page.
+                On menubar 
+                <span class="tombol abuabu">Pengaturan Awal</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol abuabu"
+                  >Pengaturan Rekening Buku Besar</span
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+                <span class="tombol abuabu">Neraca Percobaan</span>
+                <br><br>Once these values are equal and automatic accounts are set, you can activate your database by clicking on 
+                <span class="tombol warning"> Aktifkan Rekening</span> button.
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-5.png"
+              />
+              <p class="fig-desc">
+               If the initial setup is set correctly, you can confirm the activation process by clicking on 
+                <span class="tombol abuabu">Aktifkan</span> button. If this button is greyed, then refer to the error message 
+                showed and make the necessary correction.
+              
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <img
+                class="fig fig-2 mb-3"
+                src="/screenShot/fig-1-6.png"
+              />
+              <p class="fig-desc">
+                When activation process is succesfull, the full menubar will be displayed and 
+                you can start using the application to record your transactions.
+                
+              </p>
+            </div>
+
+            <div class="clearfix nsContainer">
+              <p class="fig-desc">
+                For complete guide of how to use this application you can 
+                refer to this documentation menu  and navigate to the subject of interest. 
+                If you don't see the menupanel on the leftside try to open it by clicking on 
+                <span class="tombol btn-info pt-1" style="margin-right: 3px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                </span>
+                button located on the top left side of this page.
+                <br><br>You can also access this document from within the application from menubar <span class="tombol abuabu">
+                  Bantuan
+                </span> <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg><span class="tombol abuabu">Dokumentasi</span>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebarMenu").toggleClass("active");
+          $("#content").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Nessie Akunting</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <link rel="stylesheet" href="/css/contentstyle.css" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- #region SIDEBAR NAVIGATION PANE-->
+    <div id="sidebarMenu">
+      <!-- Sidebar -->
+      <div id="sidebar" class="d-inline-block float-left">
+        <nav>
+          <div class="sidebar-header">
+            <img src="/image/nessielogo.png" style="width: 130px" class="mx-auto d-block mt-2" />
+          </div>
+
+          <ul class="list-unstyled components">
+            <div>
+              <h3 style="font-weight: 700" class="text-center">Dokumen</h3>
+            </div>
+
+            <!--#region QUICKGUIDE MENU-->
+            <li>
+              <a href="#quickguideMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                Panduan Cepat</a>
+            </li>
+
+            <ul class="collapse list-unstyled" id="quickguideMenu">
+              <li>
+                <a href="#demofile">File Demo</a>
+              </li>
+              <li>
+                <a href="#newfile">Buat File Baru</a>
+              </li>
+              <li>
+                <a href="#initialsetup">Pengaturan Awal</a>
+              </li>
+              <li>
+                <a href="#activation">Aktivasi Database</a>
+              </li>
+            </ul>
+            <!--#endregion-->
+
+            <!--#region INSTALL MENU-->
+            <li>
+              <a href="#installMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Instalasi dan
+                Pembaruan</a>
+              <ul class="collapse list-unstyled" id="installMenu">
+                <li>
+                  <a href="#installapp">Instalasi</a>
+                </li>
+                <li>
+                  <a href="#purchaseapp">Membeli Aplikasi</a>
+                </li>
+                <li>
+                  <a href="#updateapp">Pembaruan</a>
+                </li>
+                <li>
+                  <a href="#uninstallapp">Menghapus Instalasi</a>
+                </li>
+
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region ACCOUNT SETUP-->
+            <li>
+              <a href="#pengaturanMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pengaturan
+                Awal</a>
+              <ul class="collapse list-unstyled" id="pengaturanMenu">
+                <li>
+                  <a href="#menuBukubesar" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Rekening
+                    Buku Besar</a>
+                  <ul class="collapse list-unstyled" id="menuBukubesar">
+                    <li>
+                      <a href="#coa">Daftar Rekening</a>
+                    </li>
+                    <li>
+                      <a href="#addaccount">Tambah Rekening</a>
+                    </li>
+                    <li>
+                      <a href="#editaccount">Ubah Rekening</a>
+                    </li>
+                    <li>
+                      <a href="#deleteaccount">Hapus Rekening</a>
+                    </li>
+                    <li>
+                      <a href="#trialbalance">Neraca Percobaan</a>
+                    </li>
+                    <li>
+                      <a href="#automaticaccounts">Rekening Otomatis</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#menuPersediaan" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Persediaan</a>
+                  <ul class="collapse list-unstyled" id="menuPersediaan">
+                    <li>
+                      <a href="#location">Lokasi / Gudang</a>
+                    </li>
+                    <li>
+                      <a href="#">Daftar Barang dan Jasa</a>
+                    </li>
+                    <li>
+                      <a href="#">Data Persediaan</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#menuKontak" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kontak</a>
+                  <ul class="collapse list-unstyled" id="menuKontak">
+                    <li>
+                      <a href="#">Daftar Kontak</a>
+                    </li>
+                    <li>
+                      <a href="#">Pemasok</a>
+                    </li>
+                    <li>
+                      <a href="#">Pelanggan</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Aktivasi Database</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region TRANSACTIONS-->
+            <li>
+              <a href="#menuTransaksi" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Melakukan
+                Transaksi</a>
+              <ul class="collapse list-unstyled" id="menuTransaksi">
+                <li>
+                  <a href="#">Pemindahan Saldo Neraca</a>
+                </li>
+                <li>
+                  <a href="#">Pembayaran Biaya Umum</a>
+                </li>
+                <li>
+                  <a href="#">Penerimaan Pendapatan Lainnya</a>
+                </li>
+                <li>
+                  <a href="#">Pembayaran Hutang Dagang</a>
+                </li>
+                <li>
+                  <a href="#">Menerima Dari Piutang Dagang</a>
+                </li>
+                <li>
+                  <a href="#">Piutang dan Hutang Lainnya</a>
+                </li>
+                <li>
+                  <a href="#">Pembelian Aset Tetap</a>
+                </li>
+                <li>
+                  <a href="#">Biaya Dibayar Dimuka</a>
+                </li>
+                <li>
+                  <a href="#">Uang Muka Pembelian</a>
+                </li>
+                <li>
+                  <a href="#">Uang Muka Penjualan</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+
+            <!--#region SALES-->
+            <li>
+              <a href="#menuPenjualan" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle">Penjualan</a>
+              <ul class="collapse list-unstyled" id="menuPenjualan">
+                <li>
+                  <a href="#">Melakukan Penjualan</a>
+                </li>
+                <li>
+                  <a href="#">Retur Penjualan</a>
+                </li>
+                <li>
+                  <a href="#">Data Penjualan</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region PURCHASE-->
+            <li>
+              <a href="#menuPembelian" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle">Pembelian</a>
+              <ul class="collapse list-unstyled" id="menuPembelian">
+                <li>
+                  <a href="#">Melakukan Pembelian</a>
+                </li>
+                <li>
+                  <a href="#">Retur Pembelian</a>
+                </li>
+                <li>
+                  <a href="#">Data Pembelian</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region INVENTORY-->
+            <li>
+              <a href="#menuInventory" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manajemen
+                Persediaan</a>
+              <ul class="collapse list-unstyled" id="menuInventory">
+                <li>
+                  <a href="#">Lokasi / Gudang</a>
+                </li>
+                <li>
+                  <a href="#">Daftar Barang dan Jasa</a>
+                </li>
+                <li>
+                  <a href="#">Data Persediaan</a>
+                </li>
+                <li>
+                  <a href="#">Penyesuaian Persediaan</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region CONTACT-->
+            <li>
+              <a href="#manajemenKontak" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manajemen
+                Kontak</a>
+              <ul class="collapse list-unstyled" id="manajemenKontak">
+                <li>
+                  <a href="#">Daftar Kontak</a>
+                </li>
+                <li>
+                  <a href="#">Data Pemasok</a>
+                </li>
+                <li>
+                  <a href="#">Data Pelanggan</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region REPORTS-->
+            <li>
+              <a href="#menuLaporan" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Laporan</a>
+              <ul class="collapse list-unstyled" id="menuLaporan">
+                <li>
+                  <a href="#menuLaporanKeuangan" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Laporan Keuangan</a>
+                  <ul class="collapse list-unstyled" id="menuLaporanKeuangan">
+                    <li>
+                      <a href="#">Neraca Percobaan</a>
+                    </li>
+                    <li>
+                      <a href="#">Neraca Keuangan</a>
+                    </li>
+                    <li>
+                      <a href="#">Laba Rugi</a>
+                    </li>
+                    <li>
+                      <a href="#">Arus Kas</a>
+                    </li>
+                    <li>
+                      <a href="#">Laporan Jurnal Rekening</a>
+                    </li>
+                    <li>
+                      <a href="#">Jurnal Buku Besar</a>
+                    </li>
+                    <li>
+                      <a href="#">Daftar Hutang</a>
+                    </li>
+                    <li>
+                      <a href="#">Daftar Piutang</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#menuLaporanPenjualan" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Laporan Penjualan</a>
+                  <ul class="collapse list-unstyled" id="menuLaporanPenjualan">
+                    <li>
+                      <a href="#">Rangkuman Penjualan</a>
+                    </li>
+                    <li>
+                      <a href="#">Penjualan Bulanan</a>
+                    </li>
+                    <li>
+                      <a href="#">Penjualan Berdasar Faktur</a>
+                    </li>
+                    <li>
+                      <a href="#">Penjualan Berdasar Persediaan</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#menuLaporanPembelian" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Laporan Pembelian</a>
+                  <ul class="collapse list-unstyled" id="menuLaporanPembelian">
+                    <li>
+                      <a href="#">Pembelian Bulanan</a>
+                    </li>
+                    <li>
+                      <a href="#">Pembelian Berdasar Faktur</a>
+                    </li>
+                    <li>
+                      <a href="#">Pembelian Berdasar Persediaan</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#menuLaporanPersediaan" data-toggle="collapse" aria-expanded="false"
+                    class="dropdown-toggle">Laporan Persediaan</a>
+                  <ul class="collapse list-unstyled" id="menuLaporanPersediaan">
+                    <li>
+                      <a href="#">Rangkuman Persediaan</a>
+                    </li>
+                    <li>
+                      <a href="#">Laporan Persediaan Barang</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region OTHER SETTING-->
+            <li>
+              <a href="#manajemenLainnya" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle">Pengaturan Lainnya</a>
+              <ul class="collapse list-unstyled" id="manajemenLainnya">
+                <li>
+                  <a href="#menuPengguna" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manajemen
+                    Pengguna</a>
+                  <ul class="collapse list-unstyled" id="menuPengguna">
+                    <li>
+                      <a href="#">Daftar Pengguna</a>
+                    </li>
+                    <li>
+                      <a href="#">Ubah Pengguna</a>
+                    </li>
+                    <li>
+                      <a href="#">Ubah Password</a>
+                    </li>
+                    <li>
+                      <a href="#">Pengguna Non-Aktif</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Manajemen Data File</a>
+                </li>
+                <li>
+                  <a href="#">Data Perusahaan</a>
+                </li>
+              </ul>
+            </li>
+            <!--#endregion-->
+
+            <!--#region END PERIOD-->
+            <li>
+              <a href="#"> Akhir Periode Buku </a>
+            </li>
+            <!--#endregion-->
+          </ul>
+        </nav>
+      </div>
+
+      <div class="d-inline-block mt-2">
+        <button type="button" id="sidebarCollapse" style="border-radius: 0 10px 10px 0"
+          class="btn btn-info ms-0 pt-2 pb-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Page Content -->
+    <div id="content">
+      <div class="container-fluid">
+        <div>
+          <span class="warning" style="
+                font-weight: 600;
+                padding: 3px 8px;
+                border: gray solid 1px;
+                border-radius: 15px;
+              ">
+            Status : Belum Lengkap</span>
+        </div>
+        <br />
+
+        <!-- #region PANDUAN CEPAT -->
+
+        <h1 id="quickguide">Panduan Cepat</h1>
+
+        <p>
+          Ikuti panduan singkat berikut ini untuk mulai menggunakan aplikasi
+          Nessie Akunting dengan cepat.
+        </p>
+
+        <!-- #region  FILE DEMO-->
+        <section class="m-4">
+          <h4 id="demofile">Menggunakan File Demo</h4>
+
+          <div class="clearfix row">
+            <p class="col">
+              Anda dapat menggunagakan file demo untuk mengevaluasi aplikasi
+              Nessie Akunting, unduh file data
+              <a href="https://www.nessieakunting.com/demo data/tokonessie.bak" class="link" download>disini</a>.
+              <br />Salin file data (tokonessie.bak) ke media eksternal
+              seperti usb flashdisk, kemudian buka aplikasi Nessie Akunting.
+            </p>
+          </div>
+
+          <!--IMPORT FROM EXT MEDIA-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-0-0.png" />
+            <p class="fig-desc">
+              Pada tampilan layar pertama, klik pada tombol
+              <span class="tombol merah">Impor Dari Media Eksternal</span>
+              kemudian pilih file tokonessie.bak dari media eksternal anda,
+              kemudian klik tombol <span class="tombol abuabu">Impor</span>.
+            </p>
+          </div>
+
+          <!--OPEN FILE-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-0-1.png" />
+            <p class="fig-desc">
+              Anda akan melihat file yang baru saja anda impor ditampilkan
+              pada panel
+              <span class="tebal">File Data</span>, pilihlah file tersebut
+              kemudian klik tombol
+              <span class="tombol abuabu">Buka File</span>.
+            </p>
+          </div>
+
+          <!--LOGIN-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-0-2.png" />
+            <p class="fig-desc">
+              Pada layar <span class="tebal">Login</span> isikan dengan data
+              sebagai berikut, <br />Nama Pengguna / User Name :
+              <span class="tebal">admin</span> <br />Kata Sandi / Password :
+              <span class="tebal">admin</span> <br />Kemudian klik tombol
+              <span class="tombol abuabu">Login</span>
+            </p>
+          </div>
+
+          <!--LOGIN SUCCESS-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-0-3.png" />
+            <p class="fig-desc">
+              Setelah berhasil login, anda dapat mengakses fungsi-fungsi yang
+              tersedia pada aplikasi. Pada bagian atas anda akan menemukan
+              bilah menu yang berisi fungsi-fungsi untuk menjalankan aplikasi
+              ini, baik untuk mencatat transaksi, melihat laporan-laporan,
+              maupun pengaturan-pengaturan.
+              <br /><br />Sedang pada bagian kiri bawah ditampilkan nama
+              pengguna yang menggunakan aplikasi, bila anda mengklik pada nama
+              pengguna ini, sebuah menu akan menampilkan pilihan untuk
+              <span class="tombol abuabu">Logout</span> atau
+              <span class="tombol abuabu">Keluar</span> dari aplikasi.
+            </p>
+          </div>
+
+          <div class="clearfix row">
+            <p class="fig-desc">
+              Untuk mendapatkan petunjuk lengkap penggunaan aplikasi, anda
+              dapat merujuk pada dokumen ini, dokumen ini dapat pula anda
+              akses langsung melalui aplikasi Nessie Akunting dengan memiih
+              menu <span class="tombol abuabu">Bantuan</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <span class="tombol abuabu">Dokumentasi</span>, anda dapat
+              membuka bagian yang berisi topik yang anda butuhkan melalui
+              bilah navigasi yang tersedia di sisi kiri ini. Apabila bilah
+              navigasi tidak tampak, anda dapat membukanya dengan mengklik
+              tombol
+              <span class="tombol btn-info" style="padding-top: 3px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+              </span>
+              yang terletak disisi kiri atas.
+            </p>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region CREATE FILE-->
+        <section class="m-4">
+          <h4 id="newfile">Membuat File Baru</h4>
+
+          <div class="clearfix nsContainer">
+            <p class="fig-desc">
+              Apabila anda ingin membuat file data anda sendiri anda dapat
+              mengikuti instruksi di bawah untuk membuat dan menginisiasi file
+              data anda.
+            </p>
+          </div>
+
+          <!--CREATE NEW FILE-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-0.png" />
+            <p class="fig-desc">
+              Pada tampilan <span class="tebal">Halaman Awal</span>, klik
+              tombol <span class="tombol merah">Buat File Baru</span>.
+            </p>
+          </div>
+
+          <!--COMPANY INFO-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1.png" />
+            <p class="fig-desc">
+              Pada halaman <span class="tebal">Data Perusahaan</span> isikan
+              data perusahaan anda, pilih negara dari daftar negara yang
+              tersedia, pilih mata uang yang digunakan, secara default
+              aplikasi akan mengisikan dengan mata uang nasional dari negara
+              yang dipilih sebelumnya.
+              <span class="warning">Perhatian: Negara dan Mata Uang tidak dapat diubah setelah
+                pengisian awal ini.</span>
+              <br />Setelah selesai mengisikan data perusahaan / organisasi
+              lanjutkan ke halaman berikutnya dengan mengklik pada tombol
+              <span class="tombol abuabu" style="padding-top: 5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </span>
+            </p>
+          </div>
+
+          <!--PERIOD DATES-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-2.png" />
+            <p class="fig-desc">
+              Pada halaman <span class="tebal">Periode Buku</span> isikan
+              dengan tanggal mulai dan berakhirnya pencatatan transaksi
+              keuangan. <br />Kemudian lanjutkan dengan menekan tombol
+              <span class="tombol abuabu" style="padding-top: 5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </span>
+            </p>
+          </div>
+
+          <!--MASTER USER-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-3.png" />
+            <p class="fig-desc">
+              Pada halaman <span class="tebal">Pengguna Master</span> isikan
+              dengan data pengguna yang akan menjadi master dari file data
+              perusahaan ini <br />Pengguna Master adalah pengguna yang
+              memiliki otorisasi tidak terbatas terhadap data file perusahaan
+              ini.
+              <br />
+              <span class="warning">Perhatian: kata sandi/password harus diingat atau disimpan
+                baik, karena aplikasi tidak menyediakan cara untuk memulihkan
+                kata sandi yang hilang atau terlupa.
+              </span>
+              <br />Kemudian lanjutkan dengan menekan tombol
+              <span class="tombol abuabu" style="padding-top: 5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </span>
+            </p>
+          </div>
+
+          <!--FILE DATA-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-4.png" />
+            <p class="fig-desc">
+              Pada halaman <span class="tebal">File Data</span> isikan dengan
+              nama file untuk menyimpan data dari perusahaan yang akan anda
+              buat. <br /><span class="warning">nama file tidak boleh dipisah dengan spasi, harus terdiri
+                dari 3 karakter atau lebih, dan terdiri dari huruf dan angka
+                saja</span>
+              <br />Kemudian klik tombol
+              <span class="tombol abuabu"> Simpan </span>
+              untuk menyimpan data perusahaan anda.
+              <br />File data anda akan disimpan dalam harddisk system pada
+              folder yang khusus digunakan oleh aplikasi Nessie Akunting.
+              Folder dan data didalamnya akan terhapus pada saat anda
+              melakukan uninstall aplikasi Nessie Akunting, namun anda dapat
+              menyimpan file data anda dengan melakukan penyalinan pada menu
+              Manajemen Data.
+            </p>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region INITIAL SETUP-->
+        <section class="m-4">
+          <h4 id="initialsetup">Pengaturan Awal</h4>
+
+          <!--DASHBOARD-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-1.png" />
+            <p class="fig-desc">
+              Halaman pertama yang ditampilkan selanjutnya adalah halaman
+              <span class="tebal">Dashboard Pengaturan Awal</span>
+              Sebelum anda dapat memulai pencatatan transaksi keuangan, anda
+              perlu melakukan beberapa pengaturan dan mengaktivasi database
+              perusahaan anda.
+              <br />Anda dapat memulai dengan mempelajari daftar rekening
+              (coa), pilih menu<br />
+              <span class="tombol abuabu">Pengaturan Awal</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <span class="tombol abuabu">Pengaturan Rekening Buku Besar</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <span class="tombol abuabu">Daftar Rekening</span>
+            </p>
+          </div>
+
+          <!--COA-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-2.png" />
+            <p class="fig-desc">
+              Pada
+              <span class="tebal">Halaman Daftar Rekening</span> ditampilkan
+              daftar rekening sesuai template default yang dapat digunakan
+              sebagai dasar untuk menyusun daftar rekening anda.
+              <br />Rekening-rekening tersebut disusun menurut susunan hirarki
+              : <br /><span class="tombol nsGroupColor">Group</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <span class="tombol nsSubgroupColor">Sub Group</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+              <span class="tombol nsAccountColor">Rekening</span>
+              <br />Dimana setiap Rekening Detail harus merupakan bagian dari
+              suatu Sub Group, dan Sub Group bagian dari suatu Group.
+              <br />Untuk menjadi bagian dari suatu Sub Group, Rekening harus
+              memiliki no. rek lebih besar dari no. rek. Sub Groupnya tetapi
+              lebih kecil dari no. rek. Sub Group berikutnya. <br />Untuk
+              penjelasan lengkap anda dapat melihat dokuman pada bagian
+              <a class="link" href="#">Pengaturan Awal Rekening Buku Besar
+              </a>
+            </p>
+          </div>
+
+          <!--TRIAL BALANCE-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-3.png" />
+            <p class="fig-desc">
+              Pada <span class="tebal">Halaman Rekening Otomatis</span> anda
+              perlu memilih rekening-rekening yang akan digunakan sebagai
+              rekening otomatis. Rekening otomatis adalah rekening-rekening
+              yang diisi nilainya oleh aplikasi secara otomatis sesuai dengan
+              transaksi-transaksi yang berkaitan. Secara default
+              rekening-rekening ini akan diisi oleh aplikasi pada saat anda
+              membuka halaman pengaturan rekening otomatis. Tetapi apabila
+              anda mengubah daftar rekening maka ada kemungkinan anda perlu
+              mengisikan rekening otomatis secara manual. <br /><span class="warning">Pengaturan rekening otomatis hanya
+                dapat dilakukan sebelum
+                database diaktivasi dan tidak dapat diubah lagi setelahnya.
+              </span>
+              <br />Untuk penjelasan lengkap anda dapat melihat dokumen pada
+              bagian
+              <a href="#" class="link">Pengaturan Awal Rekening Otomatis</a>
+            </p>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region DATABASE ACTIVATION-->
+        <section class="m-4">
+          <h4 id="activation">Aktivasi Database</h4>
+
+          <!--ACTIVATION-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-4.png" />
+            <p class="fig-desc">
+              Sebelum anda mengaktivasi file database anda, pastikan bahwa
+              nilai rekening pada sisi debit sesuai dengan nilai pada sisi
+              kredit. Anda dapat memeriksa nilai ini pada
+              <span class="tebal">Halaman Neraca Percobaan</span>. <br />Bila
+              nilai-nilai tersebut telah sesuai, anda dapat mengaktivasi file
+              database anda dengan mengklik pada tombol
+              <span class="tombol warning"> Aktifkan Rekening </span>
+            </p>
+          </div>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-5.png" />
+            <p class="fig-desc">
+              Apabila pengaturan telah dilakukan dengan benar maka anda dapat
+              mengaktivasi database dengan mengklik tombol
+              <span class="tombol abuabu">Aktifkan</span>. Apabila tombol ini
+              tidak tersedia atau tidak dapat diklik, pelajari pesan kesalahan
+              yang ditampilkan dan lakukan pembetulan sesuai yang diminta.
+            </p>
+          </div>
+
+          <!--FIRST DASHBOARD FULL MENU-->
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-1-6.png" />
+            <p class="fig-desc">
+              Setelah aktivasi file database berhasil dilakukan, anda akan
+              melihat tampilan awal
+              <span class="tebal">Halaman Dashboard </span> dengan bilah menu
+              yang menampilkan menu lengkap. Anda dapat mulai menggunakan
+              aplikasi untuk mencatat transaksi-transaksi anda. Pelajari lebih
+              lanjut dengan memilih topik-topik yang tersedia di bilah
+              navigasi di sebelah kiri, atau klik tombol
+              <span class="tombol btn-info pt-1" style="margin-right: 3px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+              </span>
+              di sebelah kiri atas untuk membuka bilah navigasi.
+            </p>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #endregion -->
+
+        <!-- #region INSTALASI DAN PEMBARUAN-->
+        <h1 id="installation">Instalasi dan Pembaruan Aplikasi</h1>
+        <p>
+          Ikuti panduan dibawah ini petunjuk mengenai cara-cara melakukan
+          instalasi, pembaruan maupun uninstall.
+        </p>
+
+        <section class="m-4">
+          <h4 id="installapp">Menginstal Aplikasi Nessie Akunting</h4>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-install-0.png" />
+            <p class="fig-desc">
+              Aplikasi Nessie Akunting hanya dapat diinstal melalui Microsoft
+              Store yang terdapat pada Windows 10. Untuk menginstal dari
+              Miscrosoft Store, anda dapat mencari melalui kolom pencarian
+              yang tersedia di sebelah kanan atas dengan mengisikan nama
+              <span class="tebal">Nessie Akunting</span> pada kolom yang tersedia dan sebuah daftar
+              temuan akan menampilkan pilihan untuk membuka halaman aplikasi
+              Nessie Akunting di Microsoft Store. Pilih dengan mengklik pada
+              daftar yang ditampilkan dan anda akan tiba pada halaman Nessie
+              Akunting di Microsoft Store.
+              <br /><br />
+              Aplikasi Nessie Akunting hanya dapat diinstal pada Windows 10
+              minimal pada Build 1904, untuk melihat build OS anda ketikkan
+              kata "tentang" atau "about" pada bilah pencarian di Windows 10
+              yang terletak di sebelah kiri bawah, ketik "tentang" atau
+              "about" kemudian pilih "Tentang PC Anda" atau "About your PC",
+              sebuah jendela berisi informasi mengenai versi Windows 10 akan
+              ditampilkan, gulung kebawah sampai anda melihat kolom "Build
+              OS", apabila versi yang ditampilkan adalah sebelum versi 1904,
+              anda dapat memperbarui dahulu versi Windows 10 anda melalui menu
+              pengaturan di Windows 10 pada bagian "Pembaruan dan Keamanan "
+            </p>
+          </div>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-install-1.png" />
+            <p class="fig-desc">
+              Klik instal untuk mulai instalasi aplikasi Nessie Akunting.
+              Windows 10 akan secara otomatis melakukan instalasi pada
+              perangkat anda, anda dapat menutup jendela Microsoft Store bila
+              menghendaki. Sebuah notifikasi singkat di sebelah kanan bawah
+              layar anda akan memberitahukan apabila aplikasi Nessie Akunting
+              telah terinstal dan siap untuk digunakan.
+              <br /><br />(apabila tombol instal tidak aktif atau tidak
+              tersedia, maka kemungkinan versi Windows anda tidak sesuai,
+              lihat penjelasan diatas mengenai versi Windows 10)
+            </p>
+          </div>
+
+        </section>
+
+        <section class="m-4">
+          <h4 id="purchaseapp">Membeli Aplikasi Nessie Akunting</h4>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-install-0.png" />
+            <p class="fig-desc">
+              Apabila anda sedang menjalankan versi uji coba dari aplikasi Nessie Akunting, maka pada bagian atas
+              jendela akan dapat anda temukan sebuah tombol <span class="tombol warning bordered">Versi Uji Coba</span>,
+              anda dapat mengklik tombol ini untuk membeli versi penuh dari aplikasi Nessie Akunting.
+              <br><br>Cara lainnya adalah melalui Microsoft Store, pada bilah cari ketik <span class="tebal">Nessie
+                Akunting</span>
+              kemudian pilih aplikasi Nessie Akunting dari daftar pilihan. Pada halaman aplikasi Nessie Akunting, klik
+              pada tombol
+              <span class="tombol bg-msStoreBlue">Beli</span>
+              </span>
+              </span>
+            </p>
+        </section>
+
+        <section class="m-4">
+          <h4 id="updateapp">Pembaruan Aplikasi Nessie Akunting</h4>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-update-1.png" />
+            <p class="fig-desc">
+              Pembaruan untuk aplikasi Nessie Akunting akan diberitahukan melalui sebuah notifikasi berupa tombol hijau
+              bertuliskan <span class="tombol editColor">Pembaruan Tersedia</span> yang akan ditampilkan pada
+              jendela aplikasi pada bagian atas sebaris dengan bilah menu.
+              Pembaruan dapat dilakukan dengan mengklik tombol tersebut, atau dapat juga dilakukan melalui
+              Microsoft Store pada bagian Unduh dan Perbarui yang dapat anda temukan dengan mengklik pada tombol
+              <span class="tombol bordered bg-white text-dark"
+                style="padding-bottom: 5px; padding-top:0px; font-weight: 600;">...</span>
+              yang dapat anda temukan di sebelah kanan atas.
+              <br><br>Pembaruan akan berjalan secara otomatis begitu anda mengklik tombol pembaruan, apabila pembaruan
+              berhasil maka
+              sebuah notifikasi singkat akan ditampilkan pada bagian kanan bawah layar anda. Apabila anda sedang
+              menggunakan aplikasi
+              kemungkinan aplikasi akan tertutup dengan sendirinya dan membuka kembali dengan versi yang terbarukan.
+            </p>
+        </section>
+
+        <section class="m-4">
+          <h4 id="uninstallapp">Menghapus Instalasi Aplikasi Nessie Akunting</h4>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-install-5.png" />
+            <p class="fig-desc">
+              Untuk melakukan penghapusan instalasi Nessie Akunting, temukan ikon Nessie Akunting pada Menu Awal (Start
+              Menu)
+              Windows 10, kemudian klik kanan pada mouse anda, sebuah menu pop-up akan ditampilkan, pilih Hapus Instalan
+              dari menu
+              tersebut untuk menghapus instalasi Nessie Akunting.
+              <br><br><span class="warning">Peringatan : penghapusan instalasi Nessie Akunting akan menghapus pula file
+                data
+                yang tersimpan pada folder aplikasi di komputer/perangkat anda. Bila anda ingin menyimpan file data
+                anda, maka lakukan
+                penyalinan data ke media eksternal melalui menu manajemen data yang terdapat pada aplikasi.
+              </span>
+              </span>
+            </p>
+        </section>
+        <!-- #endregion-->
+
+        <!--#region ACCOUNTS SETUP-->
+        <h1>PENGATURAN AWAL REKENING</h1>
+        <p>
+          Pelajari pengaturan-pengaturan awal yang perlu anda lakukan agar aplikasi dapat berfungsi sesuai dengan
+          kebutuhan
+          akuntansi perusahaan/organisasi anda.
+        </p>
+
+        <!--#region GENERAL LEDGER SETUP-->
+        <section class="m-4">
+          <h4 id="glaccounts">Rekening Buku Besar</h4>
+          <p>Rekening buku besar adalah kumpulan rekening-rekening neraca dan laba rugi yang digunakan untuk menyortir
+            dan meringkas informasi
+            yang telah dicatat dalam jurnal baik itu jurnal umum, junal penjualan maupun jurnal pembelian.
+            Rekening-rekening ini dibuat
+            menjadi sebuah daftar rekening yang terbagi menjadi 5 kategori utama yang bersifat tetap dan ditentukan oleh
+            aplikasi.
+          </p>
+
+          <!--#region COA-->
+          <h5 id="coa">Daftar Rekening</h5>
+
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-account-1.png">
+            <div>
+              <p class="fig-desc">Pada bila menu pilih <span class="tombol abuabu">Rekening</span> ->
+                <span class="tombol abuabu">Daftar Rekening</span> anda akan melihat tampilan seperti gambar disamping.
+                Bagian atas berisi nama-nama Kategori yang terbagi seperti dijelaskan tabel di bawah.
+              </p>
+              <div class="fig-desc" style="padding-top:0; margin-top: 0;">
+                <table class="table" style="font-size: 1.1em;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nomor Rek.</th>
+                      <th scope="col">Kategori</th>
+                      <th scope="col">No. Rek Anak</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1000</th>
+                      <td>Aset</td>
+                      <td>1001 ~ 1999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2000</th>
+                      <td>Hutang</td>
+                      <td>2001 ~ 2999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3000</th>
+                      <td>Ekuitas</td>
+                      <td>3001 ~ 3999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4000</th>
+                      <td>Pendapatan</td>
+                      <td>4001 ~ 4999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5000</th>
+                      <td>Biaya</td>
+                      <td>5001 ~ 5999</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix nsColContainer">
+            <div class="desc">
+              Rekening-rekening buku besar dikategorikan ke dalam 5 Kategori utama yang sifatnya permanen dan tidak
+              dapat diubah,
+              anda dapat menambah atau menghapus Grup, Sub Grup, ataupun Rekening Detail sesuai kebutuhan anda selama
+              penambahan tersebut
+              mengikuti aturan-aturan yang dijelaskan dibawah ini.
+            </div>
+            <div class="desc">
+              Daftar rekening ini dibuat berdasarkan hirarki sebagai berikut : <br>
+              <div style="margin-top: 3px; margin-bottom: 7px;">
+                <span class="tombol abuabu">Kategori</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+                <span class="tombol abuabu">Grup</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+                <span class="tombol abuabu">Sub Grup</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+                <span class="tombol abuabu">Rekening</span>
+              </div>
+
+              Yang mana berarti bahwa Grup hanya dapat menjadi bagian dari suatu Kategori, sedangkan Sub Grup dari suatu
+              Grup, dan Rekening yang berisi detail keuangan akan menjadi bagian dari suatu Sub Grup. Anda tidak dapat
+              menambahkan suatu Rekening langsung ke suatu Grup tanpa melalui Sub Grup.
+            </div>
+            <div class="desc">
+              Daftar rekening anda harus memiliki rekening-rekening yang akan dipergunakan sebagai rekening otomatis,
+              berikut rekening-rekening
+              yang wajib ada dalam daftar rekening anda.
+              <div class="desc">
+                <table class="table" style="margin-top:1rem; font-size: 0.7em;">
+                  <thead>
+                    <tr>
+                      <th scope="col">Jenis Akun</th>
+                      <th scope="col">No. Rek.</th>
+                      <th scope="col">Nama Rek.</th>
+                      <th scope="col">Jenis Entri</th>
+                      <th scope="col">Penjelasan</th>
+                      <th scope="col">Jumlah Rek.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Piutang Usaha</th>
+                      <td>1001-1999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Piutang Usaha</td>
+                      <td>1 rekening</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Uang Muka Pembelian</th>
+                      <td>1001-1999</td>
+                      <td>Bebas</td>
+
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Uang Muka Pembelian</td>
+                      <td>1 rekening</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Hutang Dagang</th>
+                      <td>2001-2999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Hutang Dagang</td>
+                      <td>1 rekening</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Uang Muka Penjualan</th>
+                      <td>2001-2999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Uang Muka Penjualan</td>
+                      <td>1 rekening</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Laba Ditahan</th>
+                      <td>3001-3999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Laba Ditahan</td>
+                      <td>1 rekening</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Laba Tahun Berjalan</th>
+                      <td>3001-3999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Laba Tahun Berjalan</td>
+                      <td>1 rekening</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Penjualan</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Penjualan dan Retur Penjualan. Dapat digabung atau
+                        dipisah.</td>
+                      <td>min. 1 rek. / dapat lebih</td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row">Diskon Diberikan</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Diskon Penjualan yang diberikan</td>
+                      <td>1 rekening</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Harga Pokok Penjualan</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Hpp dan Retur Hpp. Dapat digabung atau dipisah.</td>
+                      <td>min. 1 rek. / dapat lebih</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Diskon Diterima</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Diskon Pembelian yang diterima.</td>
+                      <td>1 rekening</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Beban Penjualan</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Penyusutan Persediaan</td>
+                      <td>min. 1 rek. / dapat lebih</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Beban Penjualan</th>
+                      <td>4001-4999</td>
+                      <td>Bebas</td>
+                      <td>Rekening</td>
+                      <td>Sebagai rekening otomatis untuk perkiraan Biaya Transport Pembelian</td>
+                      <td>1 rekening</td>
+                    </tr>
+                  </tbody>
+
+                </table>
+              </div>
+              Pilihan <span class="tombol abuabu">Jenis Akun</span> dan <span class="tombol abuabu">Jenis Entri</span>
+              dapat anda temukan pada saat anda menggunakan fungsi tambah rekening yang tersedia
+              pada jendela Daftar Rekening.
+            </div>
+          </div>
+          <!--#endregion-->
+
+          <!--#region ADD ACCOUNT-->
+          <h5 id="addaccount">Tambah Rekening</h5>
+          <div class="clearfix nsContainer">
+            <img class="fig mb-3" src="/screenShot/fig-account-add-1.png">
+            <p class="fig-desc">
+              Untuk menambahkan rekening pada daftar rekening klik tombol <span class="tombol addColor">+</span> yang
+              terdapat di bilah sebelah kiri
+              daftar rekening. Panel <span class="tebal">Tambah Rekening</span> akan ditampilkan di sisi kanan dari
+              daftar rekening.
+              <br>Mulailah dengan mengisi nomor rekening baru, dengan ketentuan nomor rekening baru harus lebih besar
+              dari no rek. induknya namun
+              lebih kecil dari no. rekening berikutnya yang memiliki hirarki 1 tingkat diatas rekening baru yang anda
+              buat. Setelah no. rek. diisi lanjutkan
+              dengan <span class="tebal">Jenis Entri</span>, pilihan jenis entri akan tersedia secara dinamis
+              menyesuaikan dengan posisi no. rekening anda
+              dalam daftar rekening. Kemudian isi kolom-kolom berikutnya, setelah semua kolom diisi maka tombol <span
+                class="tombol addColor">
+                Simpan</span> akan diaktifkan secara otomatis, dan anda dapat mengkliknya. Apabila tombol tersebut belum
+              aktif, berarti ada kolom isian yang belum
+              anda isi dengan benar.
+              <br><span class="warning">Kolom saldo awal hanya tersedia pada fungsi Tambah Rekening sebelum
+                database diaktivasi dan hanya detil Rekening saja yang memiliki kolom Saldo Awal
+              </span>
+            </p>
+          </div>
+
+
+          <!--#endregion-->
+
+          <!--#region EDIT ACCOUNT-->
+          <h5 id="editaccount">Ubah Data Rekening</h5>
+          <div class="clearfix nsContainer"">
+            <img class=" fig mb-4" src="/screenShot/fig-account-edit-1.png">
+            <p class="fig-desc">
+              Untuk mengubah data Grup, Sub Group atau Rekening, pilih rekening dari daftar rekening kemudian klik pada
+              tombol <span class="tombol editColor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+                </svg></span>, panel <span class="tebal">Ubah Data Rekening</span> akan ditampilkan di sisi kanan daftar
+              rekening. Anda dapat mengubah nama
+              dari Grup, Sub Grup dan Rekening pada fungsi ini, khusus untuk tipe entri <span
+                class="tebal">Rekening</span>
+              anda dapat pula mengubah Saldo Awal rekening apabila database belum diaktivasi, setelah aktivasi anda
+              hanya dapat mengubah
+              nama rekening saja. Setelah perubahan yang diperlukan anda lakukan, klik tombol <span
+                class="tombol editColor">Ubah</span> untuk
+              menyimpan perubahan yang anda lakukan.
+            </p>
+          </div>
+          <!--#endregion-->
+
+          <!--#region REMOVE ACCOUNT-->
+          <h5 id="deleteaccount">Hapus Rekening</h5>
+          <div class="clearfix nsContainer">
+            <img class="fig mb-4" src="/screenShot/fig-account-delete-1.png">
+            <p class="fig-desc">
+              Untuk menghapus Grup, Sub Grup atau Rekening, pilih rekening dari daftar rekening kemudian klik pada
+              tombol
+              <span class="tombol cancelColor">-</span> yang ada di bilah sebelah kiri daftar rekening, kemudian
+              panel <span class="tebal">Hapus Rekening</span> akan ditampilkan di sisi kanan daftar rekening.
+              Klik pada tombol <span class="tombol cancelColor">Hapus</span> untuk menghapus rekening tersebut. Untuk
+              dapat menghapus suatu
+              Grup atau Sub Grup, maka Grup atau Sub Grup itu tidak boleh memiliki rekening anak dibawahnya. Sedangkan
+              untuk menghapus suatu
+              detil Rekening, maka Rekening tersebut harus memilik Saldo Nilai 0, tidak digunakan sebagai Rekening
+              Otomatis, dan apabila
+              database telah diaktivasi, maka rekening bersangkutan belum pernah digunakan dalam suatu transaksi.
+            </p>
+
+          </div>
+          <!--#endregion-->
+
+          <!--#region TRIAL BALANCE ON INITIAL SETUP-->
+          <h5 id="trialbalance">Neraca Percobaan Ringkas</h5>
+          <div class="clearfix nsContainer">
+            <img class="fig mb-4" src="/screenShot/fig-1-4.png">
+            <p class="fig-desc">
+              Dalam tahap pengaturan awal, fungsi <span class="tebal">Neraca Percobaan Ringkas</span> diperlukan untuk 
+              melihat apakah nilai-nilai yang terdapat pada sisi debit dan kredit dari daftar rekening yang anda buat telah 
+              sesuai. Nilai <span class="tebal">Total</span> sisi debit harus sama dengan sisi kredit sebelum anda dapat mengaktivasi 
+              database anda. Neraca Percobaan Ringkas ini dapat anda temukan di menu<br> <span class="tombol abuabu">Pengaturan Awal</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+              <span class="tombol abuabu">Pengaturan Rekening</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+              <span class="tombol abuabu">Neraca Percobaan</span>
+            </p>
+
+          </div>
+          <!--#endregion-->
+
+          <!--#region AUTOMATIC ACCOUNTS-->
+          <h5 id="automaticaccounts">Rekening Otomatis</h5>
+          <div class="clearfix nsContainer">
+            <img class="fig mb-4" src="/screenShot/fig-1-3.png">
+            <p class="fig-desc">
+              Rekening Otomatis adalah rekening-rekening yang digunakan oleh aplikasi dan nilainya diubah secara otomatis oleh aplikasi. 
+              Anda tidak dapat mengakses secara langsung rekening-rekening ini melalui fungsi-fungsi yang ada di aplikasi.<br>
+              Pengaturan rekening otomatis adalah pengaturan untuk menentukan rekening-rekening yang akan digunakan sebagai rekening otomatis sesuai dengan 
+              ketentuan yang dapat anda temukan di petunjuk mengenai <a href="#coa" class="link">daftar rekening</a>.  Pengaturan rekening otomatis ini hanya dapat dilakukan 
+              pada saat database belum diaktivasi saja. <br>
+              Secara default pada saat anda membuka halaman <span class="tebal">Rekening Otomatis</span>, aplikasi akan mengisi kolom-kolom dengan 
+              rekening-rekening yang paling sesuai berdasarkan Tipe Rekening maupun Nama Rekening. Apabila anda melakukan perubahan pada daftar rekening dan merubah nama dari rekening-rekening tersebut 
+              ada kemungkinan aplikasi tidak dapat melakukan pengisian otomatis ini, sehingga anda perlu melakukannya secara manual dari daftar pilihan yang tersedia.
+              <br>Setelah <span class="tebal">Rekening Otomatis</span> diisi atau diubah, klik <span class="tombol addColor">Simpan</span>
+            </p>
+          </div>
+          <!--#endregion-->
+        </section>
+        <!--#endregion-->
+
+        <!--#region INVENTORY SETUP-->
+        <section class="m-4">
+          <h4 id="inventorysetup">Pengaturan Persediaan</h4>
+          <p>
+            Persediaan pada aplikasi Nessie Akunting disusun dari 2 komponen utama, yaitu daftar <span class="tebal">Lokasi/Gudang</span>
+          dan daftar <span class="tebal">Barang dan Jasa</span>. Lokasi/Gudang berisi informasi dari lokasi/gudang dimana persediaan tersebut disimpan, 
+          suatu organisasi/perusahaan dapat memiliki lebih dari 1 lokasi. Sedangkan barang dan jasa berisi informasi mengenai tiap jenis barang 
+          berdasar nomor SKU nya. Setelah anda membuat daftar lokasi/gudang dan daftar barang maka anda dapat menambahkan <span class="tebal">Persediaan</span>, 
+          dimana tiap persediaan mewakili ketersediaan suatu barang <span class="warning">(item jasa tidak memiliki entri persediaan)</span> di suatu lokasi tertentu, sehingga untuk tiap sku barang dapat memiliki banyak persediaan, 
+          masing-masing di tiap lokasi yang berbeda. Selanjutnya untuk membuat daftar Lokasi/Gudang, Barang dan Jasa, Persediaan anda dapat mengikuti petunjuk 
+          di bawah.
+
+          <h5 id="location">Daftar Lokasi/Gudang</h5>
+          <div class="clearfix nsContainer">
+            <img class="fig mb-4" src="/screenShot/fig-wh-add.png">
+            <p class="fig-desc">Untuk menambahkan lokasi, klik tombol <span class="tombol addColor">+</span>, panel <span class="tebal">Tambah Data Lokasi</span> akan ditampilkan pada panel di sisi kiri.
+              <br>Isikan dengan data lokasi dimana anda akan menyimpan persediaan anda. Klik <span class="tombol addColor">Simpan</span>
+              Lokasi yang baru saja anda tambahkan akan muncul pada panel <span class="tebal">Data Lokasi</span>. <br>
+              Pada kolom paling kanan dalam daftar lokasi, anda akan melihat tombol-tombol <span class="tombol abuabu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg></span> untuk melihat informasi detil dari lokasi, 
+              <span class="tombol editColor" style="color:black;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                </svg></span> untuk mengubah data, dan
+              <span class="tombol cancelColor" style="color:black; padding-top:3px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                </svg></span> untuk menghapus data lokasi.
+            </p>
+          </div>
+          </p>
+        </section>
+        <!--#endregion-->
+
+        <!--#endregion-->
+
+      </div>
+    </div>
+    <!-- #endregion -->
+  </div>
+
+  <!-- #region SCRIPT SYSTEM DEPENDENCY-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- #endregion -->
+
+  <!-- #region  MY SCRIPT-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal",
+      });
+
+      $("#sidebarCollapse").on("click", function () {
+        $("#sidebarMenu").toggleClass("active");
+        $("#content").toggleClass("active");
+      });
+    });
+  </script>
+  <!-- #endregion -->
+</body>
+
+</html>

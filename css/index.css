@@ -1,0 +1,630 @@
+body {
+  background-color: transparent;
+  padding: 0;
+  font-size: 16;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+
+/* CONTAINERS ====*/
+
+.FirstContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.SecondContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.ThirdContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.Third-B-Container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  height: 120vh;
+  width: 100%;
+}
+
+.FourthContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.FifthContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/*==================================================*/
+
+/* ASSIST CONTAINER =============================*/
+.FluidRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.FluidRowThirdB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  height:110vh;
+}
+.FluidColumn {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:90%;
+}
+.DistributeItemsEvenly {
+  justify-content: space-evenly;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  height: 8%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+.promoBandana {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  background-color: #1463bc;
+  color: #c0ff40ff;
+  padding-bottom: 0.5vh;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.FirstPageHeroContainer {
+  height: 67%;
+  width: 100%;
+  align-items: center;
+}
+.FirstPageFooterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 20%;
+  align-items: center;
+}
+.body40Content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+
+.body60Content {
+  display: flex;
+  flex-direction: columns;
+  width: 70%;
+  height: 100%;
+}
+.SecondPageHeroContainer {
+  background-image: url(/image/workWithComputer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FourthPageItems {
+  align-self: center;
+}
+.fifthPageItems {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: center;
+  text-align: center;
+  height: 95%;
+}
+.fifthPageItem {
+  margin: 1rem;
+}
+.footer {
+  height: 5%;
+  align-self: center;
+}
+
+/*COMPONENTS ===================================*/
+.nessieLogo {
+  height: 100%;
+  width: Auto;
+}
+
+.mengapa {
+  height:10vh;
+  object-fit:contain;
+  width: auto;
+  margin-left:0;
+  margin-right:auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.Computers {
+  width: auto;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: -1.5rem;
+}
+.KerjaHemat {
+  width: auto;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.BrandImage {
+  height: 70px;
+}
+.KompetisiCerdas {
+  margin-top: 5%;
+  margin-left: 3%;
+  width: 70%;
+}
+.Solusi {
+  margin-top: Auto;
+  margin-bottom: 5%;
+  align-self: flex-end;
+  margin-right: auto;
+  margin-left: auto;
+}
+.SoftwareAkuntansi {
+  align-self: center;
+  align-content: center;
+  margin: auto;
+  width: 90%;
+}
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0.5em;
+}
+.custom-list li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url("/image/CheckMarkIcon.png");
+  background-size: cover;
+  background-position: top;
+  background-position-y: top;
+  left: 0;
+  top: 0%;
+  transform: translateY(5px);
+}
+.card-title {
+  height: 18%;
+}
+.wideBody {
+  width: 400px;
+}
+.nessieCard {
+  background-color: White;
+  box-shadow: 0px -0.5px 3px 1px #707070dd inset, 0 1px 7px 1px #909090ff;
+  color: #707070;
+  border-radius: 5px;
+  width:50%;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.thickRightBorder {
+  border-right: orange solid 55px;
+}
+.thickLeftBorder{
+  border-left: orange solid 55px;
+}
+
+.thinFont {
+  font-weight: 400;
+}
+.card-title-height-jumbo {
+  height: Auto;
+  margin-bottom: 2rem;
+}
+.card-title .bottomborder {
+  border-bottom: gray solid 1px;
+}
+.card {
+  color: dimgray;
+  width: 17%;
+}
+.cardImageMargin {
+  padding: 1.5em;
+}
+.card-group {
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.cardImageMargin {
+  padding: 1.5em;
+}
+.contactImage {
+  height: 40px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.menyeluruh {
+  background-color: transparent;
+  align-self: flex-start;
+  margin-left: 2rem;
+  height: 30%;
+  width: auto;
+}
+
+.pelajari {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+.thirdPageCardGroupHeight {
+  height: 55%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/*===================================================*/
+
+/* COLORS AND STYLES ======================================*/
+.nessieBlueGray {
+  background: linear-gradient(180deg, #1463bcff, 50%, gray);
+}
+.nessieSolidBlue {
+  background-color: #1463bcff;
+}
+.BottomUpBlueGradient {
+  background: linear-gradient(0deg, #1463bcff, white);
+}
+.TopBottomBlueGradient {
+  background: linear-gradient(180deg, #1463bcff, white);
+}
+.nessieBgColor {
+  background: linear-gradient(180deg, gray, 65%, #1463bcff);
+}
+.VerticalWhiteGray {
+  background: linear-gradient(0deg, gray, white);
+}
+
+/*== FOR SMALL DISPLAY===============================================*/
+
+@media (max-width: 768px) {
+  /* CONTAINERS ====*/
+
+  .FirstContainer {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .SecondContainer {
+    display: flex;
+    flex-direction: column;
+    height: 190vh;
+    width: 100%;
+  }
+  .ThirdContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .Third-B-Container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .FourthContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .FifthContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /*==================================================*/
+
+  /* ASSIST CONTAINER =============================*/
+
+  .FluidRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .FluidColumn {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:auto;
+  }
+
+  .FluidRowThirdB {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width:100%;
+    justify-content: space-evenly;
+    height:310vh;
+  }
+
+  .DistributeItemsEvenly {
+    justify-content: space-evenly;
+  }
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+  .promoBandana {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: #1463bc;
+    color: #c0ff40ff;
+    padding-bottom: 0.5vh;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .FirstPageHeroContainer {
+    height: 52%;
+    width: 100%;
+    align-items: center;
+  }
+  .FirstPageFooterContainer {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: space-evenly;
+  }
+  .body40Content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .body60Content {
+    display: flex;
+    flex-direction: columns;
+    width: 100%;
+    height: 50%;
+  }
+  .SecondPageHeroContainer {
+    background-image: url(/image/workWithComputer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .FourthPageItems {
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+  }
+  .fifthPageItems {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    height: 95%;
+  }
+  .fifthPageItem {
+    margin: 1rem;
+  }
+  .footer {
+    height: 5%;
+    align-self: center;
+  }
+
+  /*COMPONENTS ===================================*/
+  .thickRightBorder {
+    border-right: orange solid 0px;
+  }
+  .thickLeftBorder{
+    border-left: orange solid 0px;
+  }
+  .nessieLogo {
+    height: 70%;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+
+  .nessieCard {
+    background-color: White;
+    box-shadow: 0px -0.5px 1px 1px #707070dd inset, 0 1px 7px 1px #909090ff;
+    color: #707070;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .mengapa {
+    height:5vh;
+    object-fit:contain;
+    width: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .Computers {
+    width: auto;
+    height: 55%;
+    margin-top: -3rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .KerjaHemat {
+    width: auto;
+    height: 25%;
+    margin-top: -2rem;
+    margin-bottom: 0;
+  }
+
+  .BrandImage {
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+  }
+  .KompetisiCerdas {
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 50%;
+  }
+  .Solusi {
+    width: 70%;
+    margin-top: Auto;
+    margin-bottom: 5%;
+    align-self: flex-end;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .SoftwareAkuntansi {
+    align-self: center;
+    align-content: center;
+    margin: auto;
+    width: 95%;
+  }
+  .custom-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .custom-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0.5em;
+  }
+  .custom-list li:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url("/image/CheckMarkIcon.png");
+    background-size: cover;
+    background-position: top;
+    background-position-y: top;
+    left: 0;
+    top: 0%;
+    transform: translateY(5px);
+  }
+  .card-title {
+    height: 22%;
+    border-bottom: gray solid 2px;
+  }
+  .card {
+    color: dimgray;
+    width: 90%;
+    height: 73vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-group {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contactImage {
+    height: 40px;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .menyeluruh {
+    background-color: transparent;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+    width: auto;
+  }
+
+  .pelajari {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .thirdPageCardGroupHeight {
+    height: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  /*===================================================*/
+}

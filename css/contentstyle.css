@@ -1,0 +1,118 @@
+.nsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nsColContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fig {
+    flex-basis: 0;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid #cccccc;
+    margin: 1rem;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.fig-desc {
+    padding: 1rem;
+}
+
+.desc {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:0;
+    padding-bottom:1rem;
+    margin:0;
+    font-size: 1.2em;
+    color:#666;
+}
+
+.tombol {
+    padding : 1px 10px 1px 10px;
+    border-radius: 7px;
+    white-space: nowrap;
+    margin-left: 1px;
+}
+
+.bordered {
+    border: 1px solid grey;
+}
+
+.addColor {
+    background-color: #82BC24;
+    color: white;
+}
+
+.cancelColor {
+    background-color: #E94957;
+    color:white;
+}
+
+.editColor {
+    background-color: #00B4D8;
+    color: white;
+}
+
+.merah {
+    background-color: red;
+    color:white;
+}
+.abuabu {
+    background-color: silver;
+    color:black;
+}
+.warning {
+    background-color: yellow;
+    color: red;
+}
+
+.bg-msStoreBlue {
+    background-color: dodgerblue;
+    color:white;
+}
+
+.nsGroupColor{
+    background-color: #474a45;
+    color:White;
+}
+.nsSubgroupColor{
+    background-color: #00B4D8;
+    color:white;
+}
+.nsAccountColor{
+    background-color: #f7fde5;
+    color:black;
+}
+
+.tebal {
+    font-weight: bold;
+    color: #888888;
+    
+}
+
+@media (min-aspect-ratio:9/15){
+    .nsContainer {
+        flex-direction: row;
+    }
+    .fig {
+        flex-basis: 0;
+        max-width: 50%;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
