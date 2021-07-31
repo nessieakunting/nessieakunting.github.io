@@ -1,5 +1,6 @@
 body {
   background-color: transparent;
+  overflow-x:hidden;
   padding: 0;
   font-size: 16;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

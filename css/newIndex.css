@@ -2,6 +2,7 @@
 
 
 body {
+    overflow-x: hidden;
     font-size: 16px;
     font-weight: 500;
     color:dimgray;
@@ -41,10 +42,8 @@ h1 {
 }
 
 #HeroContainer {  
-    background-color: darkblue;
-    background: linear-gradient(90deg,#040348,45%,#0e81b9);
-    background: -moz-linear-gradient(90deg,#040348,45%,#0e81b9);
-    border-radius: 10px;
+    background-color: transparent;
+    border-radius: 5px;
     
 }
 
@@ -77,6 +76,11 @@ h1 {
 .MyImage {
     width: 100%;
     max-height: 100%;
+    display: block;
+}
+
+.ImageFullWidth{
+    Width:100%;
     display: block;
 }
 
