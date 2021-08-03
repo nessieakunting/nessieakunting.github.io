@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing Script&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    color:dimgray;
+    padding: 1%;
+    height:100%;
+}
+
+.wa_sticker {
+    position:fixed;
+    bottom: 8vh;
+    right: 8vh;
+    background-image: url(/image/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:1px;
+    height:1px;
+}
+
+.email_sticker {
+    position:fixed;
+    bottom: 8vh;
+    right: 15vh;
+    background-image: url(/image/email.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:1px;
+    height:1px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+
+#HeaderContainer {
+    padding:0;       
+}
+
+#HeroContainer {  
+    background-color: transparent;
+    border-radius: 5px;
+    
+}
+
+.MyContainer {
+    background: linear-gradient(90deg,#040348,45%,#0e81b9);
+    background: -moz-linear-gradient(90deg,#040348,45%,#0e81b9);
+    border-radius: 10px;
+    
+}
+
+.win10logo {
+    height:70%;
+}
+
+.my-text-shadow {
+    text-shadow: 0px -0.1px 52px #262b2f;
+}
+
+#HeroFooterContainer {
+    background-color:White;
+}
+
+#BrandLogo {
+    height:50px;
+    width:auto;
+    margin: 5px 10px 5px 0px;
+    
+}
+
+.MyImage {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.ImageFullWidth{
+    Width:100%;
+    display: block;
+}
+
+.myCardBox {
+    border:#a0a0a0 solid 1px;
+    height:100%;
+    padding-top:0.5rem;
+    padding-right: 0.5rem;
+}
+
+.myCard {
+    background-color:#c6e3f7ff;
+    
+    height:100%;
+    border-radius: 3px;
+    margin: 0;
+    padding:1rem;
+    box-shadow: 0 0px 45px transparent, 
+    -0px -0px 1px #10101070,
+    0 0 15px #10101070;
+}
+.myCard-title {
+    font-weight: 700;
+    color:#262b2f;
+    font-family: 'Dancing Script',Roboto,Segoe UI, Arial;
+    padding-bottom:0.5rem;
+    border-bottom: #262b2f solid 3px ;
+}
+.myCard-body { 
+    margin-top:0.5rem;
+    font-weight: 100;
+    color:#262b2f;
+    font-family: Roboto, Segoe UI, Arial;
+}
+
+@media (max-width:768px){
+
+    #BrandLogo {
+        height:auto;
+        width:80vw;
+        
+    }
+    body {
+        padding:0;
+    }
+    #HeaderContainer {
+        padding:0;      
+        text-align: center; 
+    }
+
+    #HeroContainer {   
+        background: linear-gradient(180deg,#040348,#0e81b9);
+        border-radius: 0; 
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}
